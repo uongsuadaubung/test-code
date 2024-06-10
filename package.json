@@ -17,7 +17,7 @@
     "typescript": "^5.4.5"
   },
   "dependencies": {
-    "@datastructures-js/priority-queue": "4.2.0",
+    "@datastructures-js/priority-queue": "5.4.0",
     "lodash": "^4.17.21"
   }
 }
