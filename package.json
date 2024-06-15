@@ -9,12 +9,17 @@
   },
   "keywords": [],
   "author": "",
+  "type": "module",
   "license": "ISC",
   "devDependencies": {
-    "@types/lodash": "^4.17.4",
-    "prettier": "3.3.1",
-    "tsx": "^4.15.4",
-    "typescript": "^5.4.5"
+    "@eslint/js": "^8.57.0",
+    "@types/lodash": "^4.17.5",
+    "eslint": "^8.57.0",
+    "globals": "^15.4.0",
+    "prettier": "^3.3.2",
+    "tsx": "^4.15.5",
+    "typescript": "^5.4.5",
+    "typescript-eslint": "^7.13.0"
   },
   "dependencies": {
     "@datastructures-js/priority-queue": "5.4.0",
