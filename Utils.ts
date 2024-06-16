@@ -17,7 +17,7 @@ export function arrayToBST(arr: Array<number | null>): TreeNode | null {
   }
 
   let root: TreeNode | null = null;
-  for (let val of arr) {
+  for (const val of arr) {
     if (val !== null) {
       root = insertIntoBST(root, val);
     }
@@ -37,7 +37,7 @@ export function arrayToList(arr: Array<number>): ListNode | null {
     return null;
   }
   let root: ListNode | null = null;
-  for (let val of arr) {
+  for (const val of arr) {
     root = insertIntoList(root, val);
   }
   return root;
@@ -45,18 +45,17 @@ export function arrayToList(arr: Array<number>): ListNode | null {
 
 export const createListNodeFromArray = (arr: number[]): ListNode | null => {
   if (arr.length === 0) {
-    return null
+    return null;
   }
-  const head = new ListNode(arr[0])
-  let current = head
+  const head = new ListNode(arr[0]);
+  let current = head;
   for (let i = 1; i < arr.length; i++) {
-    current.next = new ListNode(arr[i])
-    current = current.next
+    current.next = new ListNode(arr[i]);
+    current = current.next;
   }
-  return head
-}
-function generateSubsetsBacktrack(nums: number[]): number[][] {
-  const n = nums.length;
+  return head;
+};
+export function generateSubsetsBacktrack(nums: number[]): number[][] {
   const subsets: number[][] = [];
 
   const backtrack = (start: number, path: number[]) =>{
@@ -67,14 +66,14 @@ function generateSubsetsBacktrack(nums: number[]): number[][] {
       path.pop();
     }
 
-  }
+  }; 
 
-  backtrack(0,[])
+  backtrack(0,[]);
 
   return subsets;
 }
 
-function generateSubsetsBinary(nums: number[]): number[][] {
+export function generateSubsetsBinary(nums: number[]): number[][] {
   const n = nums.length;
   const subsets: number[][] = [];
 
@@ -89,4 +88,23 @@ function generateSubsetsBinary(nums: number[]): number[][] {
   }
 
   return subsets;
+}
+export function rotateMatrix(matrix: number[][]): void {
+  const n = matrix.length;
+
+  // Đảo ngược các hàng
+  for (let row = 0; row < Math.floor(n / 2); row++) {
+    const temp = matrix[row];
+    matrix[row] = matrix[n - row - 1];
+    matrix[n - row - 1] = temp;
+  }
+
+  // Chuyển vị ma trận
+  for (let row = 0; row < n; row++) {
+    for (let col = row + 1; col < n; col++) {
+      const temp = matrix[row][col];
+      matrix[row][col] = matrix[col][row];
+      matrix[col][row] = temp;
+    }
+  }
 }
