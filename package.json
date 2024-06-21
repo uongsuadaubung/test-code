@@ -15,11 +15,11 @@
     "@eslint/js": "^8.57.0",
     "@types/lodash": "^4.17.5",
     "eslint": "^8.57.0",
-    "globals": "^15.4.0",
+    "globals": "^15.6.0",
     "prettier": "^3.3.2",
-    "tsx": "^4.15.5",
-    "typescript": "^5.4.5",
-    "typescript-eslint": "^7.13.0"
+    "tsx": "^4.15.7",
+    "typescript": "^5.5.2",
+    "typescript-eslint": "^7.13.1"
   },
   "dependencies": {
     "@datastructures-js/priority-queue": "5.4.0",
