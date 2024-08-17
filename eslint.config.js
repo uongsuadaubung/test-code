@@ -1,11 +1,11 @@
 import globals from "globals";
 import pluginJs from "@eslint/js";
-import tseslint from "typescript-eslint";
+import tsEslint from "typescript-eslint";
 
 export default [
   { languageOptions: { globals: globals.es2022 } },
   pluginJs.configs.recommended,
-  ...tseslint.configs.recommended,
+  ...tsEslint.configs.recommended,
   {
     rules: {
       eqeqeq: "error", // sử dụng === thay vì ==
@@ -20,16 +20,10 @@ export default [
       semi: ["error", "always"], // bắt buộc đặt dấu ;
       quotes: ["error", "double"], // sử dụng "
       "comma-dangle": ["error", "always-multiline"],
-      "max-len": ["error", { code: 120 }],
-      "arrow-parens": ["error", "as-needed"],
+      "max-len": ["error", { code: 150 }],
+      // "arrow-parens": ["error", "as-needed"],
+      "no-inner-declarations": 0,
       //typescript
-      "@typescript-eslint/explicit-function-return-type": [
-        "warn",
-        {
-          allowExpressions: true,
-          allowTypedFunctionExpressions: true,
-        },
-      ], // bắt buộc dùng kiểu trả về
     },
   },
 ];

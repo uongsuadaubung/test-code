@@ -13,17 +13,19 @@
   "license": "ISC",
   "devDependencies": {
     "@eslint/js": "^8.57.0",
-    "@types/lodash": "^4.17.6",
+    "@types/lodash": "^4.17.7",
+    "@types/node": "^20.15.0",
     "eslint": "^8.57.0",
-    "globals": "^15.7.0",
-    "prettier": "^3.3.2",
-    "tsx": "^4.16.0",
-    "typescript": "^5.5.3",
-    "typescript-eslint": "^7.15.0"
+    "globals": "^15.9.0",
+    "prettier": "^3.3.3",
+    "tsx": "^4.17.0",
+    "typescript": "^5.5.4",
+    "typescript-eslint": "^7.18.0"
   },
   "dependencies": {
     "@datastructures-js/priority-queue": "5.4.0",
     "@datastructures-js/queue": "^4.2.3",
     "lodash": "^4.17.21"
-  }
+  },
+  "packageManager": "npm@10.8.2+sha512.c7f0088c520a46596b85c6f8f1da943400199748a0f7ea8cb8df75469668dc26f6fb3ba26df87e2884a5ebe91557292d0f3db7d0929cdb4f14910c3032ac81fb"
 }
